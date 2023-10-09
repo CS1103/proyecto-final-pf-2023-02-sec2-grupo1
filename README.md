@@ -14,6 +14,50 @@ Lista de requisitos de hardware y software necesarios para utilizar el proyecto.
 ## Guía de Instalación
 
 Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependencias y configuraciones necesarias.
+Instalacion de OpenCV 4.8.0
+
+OpenCV Releases: https://opencv.org/releases/
+
+1. Clonar este repositorio. 
+2. Descargar la liberia OpenCV version 4.8.0 de la pagina de OpenCV
+3. Descomprimir la carpeta OpenCV dentro del disco C:
+   
+Configurar variables de entorno del sistema:
+4. En windows buscar editar las variables de entorno del sistema e ingresar a variables de entorno.
+5. En variables de usuario ingresar a PATH y crear una nueva ruta hacia la carpeta opencv C:\tools\opencv\build\x64\vc16\bin
+   
+   PATH            | C:\tools\opencv\build\x64\vc16\bin
+   
+6. En variables del sistema crear las siguientes nuevas variables:
+     
+  OPENCV_DIR            | C:\tools\opencv\build\x64\vc16\lib
+  OPENCV_INCLUDE_PATHS  | C:\tools\opencv\build\include
+  OPENCV_LINK_LIBS      | opencv_world460
+  OPENCV_LINK_PATHS     | C:\tools\opencv\build\x64\vc16\lib
+  OPENCV_PATH           | C:\tools\opencv
+
+7. Descargar visual studio 2022, se usara el compilador de visual studio, y cambiar la arquitectura a amd64.
+
+Configuracion de CMAKELIST:
+
+  cmake_minimum_required(VERSION 3.25)
+  project(test) // <-------- Nombre del proyecto
+
+  set(CMAKE_CXX_STANDARD 23) 
+
+  set(ENV{OPENCV_DIR} "C:/tools/opencv/build") // <---------- Ruta de acceso a el directorio de opencv
+
+  set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+
+  find_package(OpenCV REQUIRED) 
+  include_directories(${OpenCV_INCLUDE_DIRS})
+
+  add_executable(test main.cpp) // <--------------Cambia dependiendo del proyecto
+
+  set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
+
+  target_link_libraries(test ${OpenCV_LIBS}) // <------------ Modificar el nombre del proyecto
+
 
 ## Instrucciones o Reglas de Uso
 
