@@ -24,7 +24,9 @@ Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependenci
 
 ## Diagramas
 
-Incluye diagramas, gráficos o cualquier representación visual que ayude a comprender el proyecto.
+### Diagrama de Casos de Uso
+
+![Diagrama de Casos de Uso](https://imgur.com/a/PxSyE3M)
 
 ## Link de Video de Presentación
 
