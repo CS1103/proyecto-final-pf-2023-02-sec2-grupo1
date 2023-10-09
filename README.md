@@ -5,7 +5,7 @@
 
 ## Descripción del Proyecto
 
-Breve descripción del proyecto y sus características principales.
+PiXelPerFect es un proyecto universitario que busca automatizar el proceso de detección de placas de vehiculos que cometen infracciones de tránsito u otros delitos mediante un modelo supervisado de deep learning haciendo uso de la arquitectura SRCNN (Super-Resolution Convolutional neural network). Dado que muchas cámaras de seguridad (o cámaras en general) no logran proporcionar imágenes de alta resolución, ya sea por la incapacidad por sus megapixeles o los vehículos a alta velocidad que generan una vista difuminada, el modelo se centrará en facilitar una imagen de alta calidad de la placa. El modelo será entrenado con imagenes nítidas de todos los angulos posibles para que se ajuste a la realidad. En el proceso de entrenamiento se usarán algoritmos como el backpropagation, el descenso de gradiente estocástico y ADAM para poder llegar a un modelo que minimice el error. Posteriormente, el proyecto espera expandir su capacidad de inputs para que reemplace al actual sistema y automatice por completo el proceso de detección de placas de vehículos. 
 
 ## Requisitos
 
