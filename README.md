@@ -13,7 +13,7 @@ Lista de requisitos de hardware y software necesarios para utilizar el proyecto.
 
 ## Guía de Instalación
 
-Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependencias y configuraciones necesarias.
+Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependencias y configuraciones necesarias.   
 Instalacion de OpenCV 4.8.0
 
 OpenCV Releases: https://opencv.org/releases/
@@ -22,7 +22,7 @@ OpenCV Releases: https://opencv.org/releases/
 2. Descargar la liberia OpenCV version 4.8.0 de la pagina de OpenCV
 3. Descomprimir la carpeta OpenCV dentro del disco C:
    
-Configurar variables de entorno del sistema:
+Configurar variables de entorno del sistema:   
 4. En windows buscar editar las variables de entorno del sistema e ingresar a variables de entorno.
 5. En variables de usuario ingresar a PATH y crear una nueva ruta hacia la carpeta opencv C:\tools\opencv\build\x64\vc16\bin
    
@@ -38,7 +38,7 @@ Configurar variables de entorno del sistema:
 
 7. Descargar visual studio 2022, se usara el compilador de visual studio, y cambiar la arquitectura a amd64.
 
-Configuracion de CMAKELIST:
+Configuracion de CMAKELIST:   
 
   cmake_minimum_required(VERSION 3.25)
   project(test) // <-------- Nombre del proyecto
