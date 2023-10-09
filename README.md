@@ -37,7 +37,7 @@ Explicación detallada de cómo utilizar el proyecto, incluyendo ejemplos y caso
 
 ## Bibliografía
 
-<span style="font-family: 'Times New Roman', Times, serif;">Dong, C., Loy, C. C., He, K., & Tang, X. (2015). Image Super-Resolution Using Deep Convolutional Networks. Computer Science > Computer Vision and Pattern Recognition. arXiv:1501.00092 [cs.CV]</span>
+<span style="font-family: 'Times New Roman', Times, serif;">Dong, C., Loy, C. C., He, K., & Tang, X. (2015). Image Super-Resolution Using Deep Convolutional Networks. Computer Science > Computer Vision and Pattern Recognition. arXiv:1501.00092 [cs.CV].</span>
 
 ---
 
