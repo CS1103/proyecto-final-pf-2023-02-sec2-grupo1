@@ -17,8 +17,6 @@ Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependenci
 
 ## Instrucciones o Reglas de Uso
 
-Explicación detallada de cómo utilizar el proyecto, incluyendo ejemplos y casos de uso.
-
 ## Licencia de Uso
 
 Indicación de la licencia bajo la cual se distribuye el proyecto, con un enlace al archivo LICENSE si es necesario.
@@ -35,9 +33,11 @@ Enlace a un video de presentación o demostración del proyecto si está disponi
 
 Lista de los autores o contribuyentes principales del proyecto, con enlaces a sus perfiles o información de contacto.
 
+Explicación detallada de cómo utilizar el proyecto, incluyendo ejemplos y casos de uso.
+
 ## Bibliografía
 
-Cita las fuentes, recursos o documentación externa utilizada para desarrollar el proyecto.
+<span style="font-family: 'Times New Roman', Times, serif;">Dong, C., Loy, C. C., He, K., & Tang, X. (2015). Image Super-Resolution Using Deep Convolutional Networks. Computer Science > Computer Vision and Pattern Recognition. arXiv:1501.00092 [cs.CV]</span>
 
 ---
 
