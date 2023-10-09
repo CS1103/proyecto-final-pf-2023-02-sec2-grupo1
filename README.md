@@ -9,8 +9,8 @@ PiXelPerFect es un proyecto universitario que busca automatizar el proceso de de
 
 ## Requisitos
 
-Lista de requisitos de hardware y software necesarios para utilizar el proyecto.
-
+Mínimo: 
+Windows 10, macOS Monterrey, Ubuntu 22.04 LTS.
 ## Guía de Instalación
 
 Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependencias y configuraciones necesarias.   
