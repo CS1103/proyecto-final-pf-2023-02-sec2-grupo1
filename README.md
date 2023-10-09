@@ -26,7 +26,8 @@ Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependenci
 
 ### Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](https://imgur.com/a/PxSyE3M)
+![Diagrama de Casos de Uso](https://i.imgur.com/KW1gTUp.png)
+![Diagrama de Casos de Uso](https://images.g2a.com/1024x576/1x1x1/starcraft-remastered-battlenet-key-global-i10000075440001/599ad1b8ae653ad9400cec92)
 
 ## Link de Video de Presentación
 
