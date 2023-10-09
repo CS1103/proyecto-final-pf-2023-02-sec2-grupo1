@@ -48,6 +48,9 @@ Enlace a un video de presentación o demostración del proyecto si está disponi
 ## Bibliografía
 
 <span style="font-family: 'Times New Roman', Times, serif;">Dong, C., Loy, C. C., He, K., & Tang, X. (2015). Image Super-Resolution Using Deep Convolutional Networks. Computer Science > Computer Vision and Pattern Recognition. arXiv:1501.00092 [cs.CV].</span>
+<span style="font-family: 'Times New Roman', Times, serif;">De, A. M. D. (2021, October 6). Implementación de redes neuronales convolucionales en Field-Programmable Logic Arrays. https://riunet.upv.es/handle/10251/173839?show=full</span>
+<span style="font-family: 'Times New Roman', Times, serif;">SRCNN-Based Enhanced Imaging for low frequency radar. (2018, August 1). IEEE Conference Publication | IEEE Xplore. https://ieeexplore.ieee.org/abstract/document/8597817</span>
+<span style="font-family: 'Times New Roman', Times, serif;">Intelligent systems and computer technology. (n.d.). Google Books. https://books.google.com.pe/books?hl=en&lr=&id=gK4SEAAAQBAJ&oi=fnd&pg=PA3&dq=srcnn&ots=6uK4S5JIVn&sig=m7RmiqsJEhHwrYJkE-Ar0aoPmdc&redir_esc=y#v=onepage&q=srcnn&f=false</span>
 
 ---
 
