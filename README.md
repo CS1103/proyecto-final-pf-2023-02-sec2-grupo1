@@ -30,11 +30,11 @@ Configurar variables de entorno del sistema:
    
 6. En variables del sistema crear las siguientes nuevas variables:
      
-  OPENCV_DIR            | C:\tools\opencv\build\x64\vc16\lib
-  OPENCV_INCLUDE_PATHS  | C:\tools\opencv\build\include
-  OPENCV_LINK_LIBS      | opencv_world460
-  OPENCV_LINK_PATHS     | C:\tools\opencv\build\x64\vc16\lib
-  OPENCV_PATH           | C:\tools\opencv
+  OPENCV_DIR            | C:\tools\opencv\build\x64\vc16\lib   
+  OPENCV_INCLUDE_PATHS  | C:\tools\opencv\build\include   
+  OPENCV_LINK_LIBS      | opencv_world460   
+  OPENCV_LINK_PATHS     | C:\tools\opencv\build\x64\vc16\lib   
+  OPENCV_PATH           | C:\tools\opencv   
 
 7. Descargar visual studio 2022, se usara el compilador de visual studio, y cambiar la arquitectura a amd64.
 
