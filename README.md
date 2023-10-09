@@ -31,9 +31,15 @@ Enlace a un video de presentación o demostración del proyecto si está disponi
 
 ## Autores
 
-Lista de los autores o contribuyentes principales del proyecto, con enlaces a sus perfiles o información de contacto.
+| Código | Nombre                            |
+|--------|-----------------------------------|
+| Autor 1| Estefano Mauricio Zarate Manosalva |
+| Autor 2| Esteban Jose Sulca Infante        |
+| Autor 3| Natalia Falla Valdez              |
+| Autor 4| Ary Fernando Sanchez Cerna        |
+| Autor 5| Jose Guerrero Ernesto Cueva       |
+| Autor 6| Carlo Stefano Torres Gabrielli    |
 
-Explicación detallada de cómo utilizar el proyecto, incluyendo ejemplos y casos de uso.
 
 ## Bibliografía
 
