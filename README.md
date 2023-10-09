@@ -41,23 +41,23 @@ Configurar variables de entorno del sistema:
 
 Configuracion de CMAKELIST:   
 
-     cmake_minimum_required(VERSION 3.25)
-     project(test) // <-------- Nombre del proyecto
+        cmake_minimum_required(VERSION 3.25)
+        project(test) // <-------- Nombre del proyecto
 
-     set(CMAKE_CXX_STANDARD 23) 
+        set(CMAKE_CXX_STANDARD 23) 
 
-     set(ENV{OPENCV_DIR} "C:/tools/opencv/build") // <---------- Ruta de acceso a el directorio de opencv
+        set(ENV{OPENCV_DIR} "C:/tools/opencv/build") // <---------- Ruta de acceso a el directorio de opencv
 
-     set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
+        set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/cmake/")
 
-     find_package(OpenCV REQUIRED) 
-     include_directories(${OpenCV_INCLUDE_DIRS})
+        find_package(OpenCV REQUIRED) 
+        include_directories(${OpenCV_INCLUDE_DIRS})
 
-     add_executable(test main.cpp) // <--------------Cambia dependiendo del proyecto
+        add_executable(test main.cpp) // <--------------Cambia dependiendo del proyecto
 
-     set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
+        set(OpenCV_LIBS opencv_core opencv_imgproc opencv_highgui opencv_imgcodecs)
 
-     target_link_libraries(test ${OpenCV_LIBS}) // <------------ Modificar el nombre del proyecto
+        target_link_libraries(test ${OpenCV_LIBS}) // <------------ Modificar el nombre del proyecto
 
 
 ## Instrucciones o Reglas de Uso
