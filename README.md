@@ -19,7 +19,8 @@ Instrucciones detalladas sobre cómo instalar el proyecto, incluyendo dependenci
 
 ## Licencia de Uso
 
-Indicación de la licencia bajo la cual se distribuye el proyecto, con un enlace al archivo LICENSE si es necesario.
+[LICENCIA](https://github.com/CS1103/proyecto-final-pf-2023-02-sec2-grupo1/blob/main/LICENSE)
+
 
 ## Diagramas
 
@@ -47,4 +48,3 @@ Enlace a un video de presentación o demostración del proyecto si está disponi
 
 ---
 
-© Tu Nombre - Año
