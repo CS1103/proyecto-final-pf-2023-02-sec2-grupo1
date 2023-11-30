@@ -1,11 +1,11 @@
 [![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=12050773&assignment_repo_type=AssignmentRepo)
 # PiXelPerFect
 
-![Logo del Proyecto](https://i.imgur.com/9I7uA5T.png)
+![Logo del Proyecto](https://i.imgur.com/9I7uA5T.png) 
 
 ## Descripción del Proyecto
 
-PiXelPerFect es un proyecto universitario que busca automatizar el proceso de detección de placas de vehiculos que cometen infracciones de tránsito u otros delitos mediante un modelo supervisado de deep learning haciendo uso de la arquitectura SRCNN (Super-Resolution Convolutional neural network). Dado que muchas cámaras de seguridad (o cámaras en general) no logran proporcionar imágenes de alta resolución, ya sea por la incapacidad por sus megapixeles o los vehículos a alta velocidad que generan una vista difuminada, el modelo se centrará en facilitar una imagen de alta calidad de la placa. El modelo será entrenado con imagenes nítidas de todos los angulos posibles para que se ajuste a la realidad. En el proceso de entrenamiento se usarán algoritmos como el backpropagation, el descenso de gradiente estocástico y ADAM para poder llegar a un modelo que minimice el error. Posteriormente, el proyecto espera expandir su capacidad de inputs para que reemplace al actual sistema y automatice por completo el proceso de detección de placas de vehículos. 
+El presente proyecto bsuca presentar un modelo de Deep Learning usando solo una hidden layer totalmente conectada. El modelo ha sido entrenado con la base de datos MNIST sacada del sitio web kaggle. En el feedforward es en donde se pasan los inputs de capa a capa, junto a la funcion de activacion sigmoide. El objetivo de 97% de precisión se logró con el algoritmo de backpropagation. 
 
 ## Requisitos
 
