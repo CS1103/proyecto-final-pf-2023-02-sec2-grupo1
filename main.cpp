@@ -8,7 +8,7 @@ float get_number() {
     }
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     return number;
-}
+}//0.973667
 
 template<typename T>
 T get_specific() {
@@ -43,6 +43,9 @@ int main() {
     NeuralNetwork NN(3, {784, 28, 10}, 0.4);
 
     NN.epoch_training(30, data);
+
+    data.load_image("", label());
+    NN.predict(data.get_image());
 
     return 0;
 }
