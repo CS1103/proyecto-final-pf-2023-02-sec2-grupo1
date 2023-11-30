@@ -1,0 +1,13 @@
+# ninja log v5
+2	4366	7230445026158597	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/Prototype_0.5/Dataset.cpp.obj	6f594a04925d2b58
+117	4767	7230445030237744	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/main.cpp.obj	8bc67418b887f76f
+69	4998	7230445032582836	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/Prototype_0.5/NeuralNetwork.cpp.obj	3efd9f4889d2253e
+4999	5528	7230445037881594	proyecto-final-pf-2023-02-sec2-grupo1.exe	c09ee71938bb6d97
+7	1978	7230445193731381	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/main.cpp.obj	8bc67418b887f76f
+1979	2241	7230445196330631	proyecto-final-pf-2023-02-sec2-grupo1.exe	c09ee71938bb6d97
+8	1350	7230445940458311	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/main.cpp.obj	8bc67418b887f76f
+1350	1573	7230445942612768	proyecto-final-pf-2023-02-sec2-grupo1.exe	c09ee71938bb6d97
+7	1710	7230446062187543	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/main.cpp.obj	8bc67418b887f76f
+1710	1939	7230446064440916	proyecto-final-pf-2023-02-sec2-grupo1.exe	c09ee71938bb6d97
+7	6527	7230446418491936	CMakeFiles/proyecto-final-pf-2023-02-sec2-grupo1.dir/main.cpp.obj	8bc67418b887f76f
+6528	7234	7230446425508749	proyecto-final-pf-2023-02-sec2-grupo1.exe	c09ee71938bb6d97
