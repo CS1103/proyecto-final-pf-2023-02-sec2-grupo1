@@ -18,7 +18,7 @@ double* NeuralNetwork::feed_forward(const std::vector<double>& pxl_values, const
         for (int j = 0; j < n_neurons_per_layer[1]; j++)
             sum += weights[1][j][i] * a1[j];
         a2[i] = 1 / (1 + std::exp(-1 * sum));
-        dE[i] = 0.4 * ((i == lbl) - a2[i]) * a2[i] * (1 - a2[i]);
+        dE[i] = learning_rate * ((i == lbl) - a2[i]) * a2[i] * (1 - a2[i]);
     }
     return dE;
 }
@@ -50,7 +50,6 @@ double NeuralNetwork::training_result(const label& lbl, const double* a2) {
     return pred == lbl;
 }
 
-//Se inicializan los arreglos multidimensionales de acuerdo a los parámetros
 NeuralNetwork::NeuralNetwork(const size_t& n_layers, const std::vector<size_t>& n_n_per_layer, const double& l_r) : training_accuracy(0.0), learning_rate(l_r) {
     if (n_layers != n_n_per_layer.size())
         throw std::runtime_error(R"(size of parameters "n_neurons_per_layer" and "n_layers" must be equal)");
@@ -111,6 +110,7 @@ void NeuralNetwork::predict(const std::pair<std::vector<double>, label>& example
     label predicted_label = std::distance(act2, std::max_element(act2, act2 + n_neurons_per_layer[2]));
 
     std::cout << "Predicted Label: " << predicted_label << std::endl;
+    std::cout << "Real Label: " << example.second << std::endl;
 
     delete[] act1;
     delete[] act2;

@@ -8,7 +8,7 @@ float get_number() {
     }
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
     return number;
-}//0.973667
+}
 
 template<typename T>
 T get_specific() {
@@ -30,22 +30,13 @@ int main() {
     std::string test_data("C:/Users/Carlo/CLionProjects/Progra3/DL_Proyect/Prototype_0.4/cmake-build-debug/mnist_test.csv");
     Dataset data;
     data.load_data_from_csv(training_data, test_data);
-    /*std::ifstream stream(training_data);
-    if (stream.fail())
-        std::cout << "Fallo 1\n";
-    stream.close();
-    stream.open(test_data);
-    if (stream.fail())
-        std::cout << "Fallo 2\n";
-    stream.close();*/
 
     //NeuralNetwork NN(number_of_layers, neurons_per_layer, 0.4);
     NeuralNetwork NN(3, {784, 28, 10}, 0.4);
 
-    NN.epoch_training(30, data);
+    NN.epoch_training(40, data);
 
-    data.load_image("", label());
-    NN.predict(data.get_image());
+    NN.predict(data.get_test_example(10));
 
     return 0;
 }

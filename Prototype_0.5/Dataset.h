@@ -16,7 +16,6 @@ class Dataset {
     std::vector<std::pair<std::vector<double>,label>> training_data;
     std::vector<std::pair<std::vector<double>,label>> test_data;
     std::vector<std::pair<std::vector<double>,label>> validation_data;
-    std::pair<std::vector<double>,label> image;
 public:
     Dataset();
     template<template<typename...> class Container>
@@ -24,7 +23,6 @@ public:
     ~Dataset();
 
     void load_data_from_csv(const std::string&, const std::string&, const std::string& = "");
-    void load_image(const std::string&, const label&);
 
     std::pair<std::vector<double>,label> get_training_example(const size_t&) const;
     std::pair<std::vector<double>,label> get_test_example(const size_t&) const;
@@ -33,9 +31,6 @@ public:
     size_t get_training_size() const;
     size_t get_test_size() const;
     size_t get_validation_size() const;
-    std::pair<std::vector<double>,label> get_image() const {
-        return image;
-    }
 };
 
 #endif //PROTOTYPE_0_5_DATASET_H

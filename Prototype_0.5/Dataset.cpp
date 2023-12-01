@@ -49,10 +49,6 @@ void Dataset::load_data_from_csv(const std::string& trn_d, const std::string& ts
         load_csv(val_d, validation_data);
 }
 
-void Dataset::load_image(const std::string& image_path, const label& lbl) {
-    ;
-}
-
 std::pair<std::vector<double>,label> Dataset::get_training_example(const size_t& idx) const {
     return training_data[idx];
 }
