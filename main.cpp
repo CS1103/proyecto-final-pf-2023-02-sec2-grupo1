@@ -20,6 +20,8 @@ void example_2() {
     data.load_data_from_csv(training_data, test_data);
 
     NeuralNetwork NN(3, {784, 28, 10}, 0.4);
+    NN.loadParameters();
+    NN.predict(data.get_test_example(100));
 }
 
 int main() {

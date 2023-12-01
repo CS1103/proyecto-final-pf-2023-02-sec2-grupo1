@@ -68,29 +68,3 @@ size_t Dataset::get_test_size() const {
 size_t Dataset::get_validation_size() const {
     return validation_data.size();
 }
-
-void Dataset::leer_imagen_2predict(const std::string& path) {
-    // Cargar la imagen
-    cv::Mat img = cv::imread(path, cv::IMREAD_COLOR); // Cargar como imagen en color
-    if (img.empty()) {
-        throw std::runtime_error("No se pudo cargar la imagen.");
-    }
-
-    // Convertir a escala de grises si es necesario
-    cv::Mat img_gray;
-    if (img.channels() > 1) {
-        cv::cvtColor(img, img_gray, cv::COLOR_BGR2GRAY);
-    } else {
-        img_gray = img; // La imagen ya está en escala de grises
-    }
-
-    // Normalizar y almacenar los píxeles
-    image_2b_predicted.clear();
-    img_gray.convertTo(img_gray, CV_64F, 1.0 / 255); // Convierte a double y normaliza
-
-    for (int i = 0; i < img_gray.rows; ++i) {
-        for (int j = 0; j < img_gray.cols; ++j) {
-            image_2b_predicted.push_back(img_gray.at<double>(i, j));
-        }
-    }
-}

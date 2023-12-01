@@ -80,6 +80,20 @@ NeuralNetwork::NeuralNetwork(const size_t& n_layers, const std::vector<size_t>& 
     }
 }
 
+NeuralNetwork::~NeuralNetwork() {
+    for (size_t l = 0; l < n_neurons_per_layer.size() - 1; l++) {
+        for (size_t n = 0; n < n_neurons_per_layer[l]; n++)
+            delete[] weights[l][n];
+        delete[] weights[l];
+    }
+    delete[] weights;
+
+    for (size_t l = 0; l < n_neurons_per_layer.size() - 1; l++)
+        delete[] biases[l];
+    delete[] biases;
+}
+
+
 //Se entrena a la red neuronal el número de epochs que se requiera
 void NeuralNetwork::epoch_training(const size_t& epochs, const Dataset& dataset) {
     std::cout << "\nTraining started!\n";
