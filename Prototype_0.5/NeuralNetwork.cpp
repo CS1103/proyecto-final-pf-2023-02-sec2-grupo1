@@ -98,6 +98,8 @@ void NeuralNetwork::epoch_training(const size_t& epochs, const Dataset& dataset)
         }
         std::cout << "Epoch " << epoch + 1 << ": Training Data Accuracy: " << training_accuracy / dataset.get_training_size() * 10.0 << std::endl;
     }
+
+
 }
 
 void NeuralNetwork::predict(const std::pair<std::vector<double>, label>& example) {
@@ -114,4 +116,45 @@ void NeuralNetwork::predict(const std::pair<std::vector<double>, label>& example
 
     delete[] act1;
     delete[] act2;
+}
+
+void NeuralNetwork::saveParameters() {
+    std::ofstream file("network_parameters.txt");
+
+    // Guardar pesos
+    for (int i = 0; i < 2; ++i)
+        for (int j = 0; j < (i == 0 ? 784 : 28); ++j) {
+            for (int k = 0; k < (i == 0 ? 28 : 10); ++k)
+                file << weights[i][j][k] << " ";
+            file << "\n";
+        }
+
+    // Guardar sesgos
+    for (int i = 0; i < 2; ++i) {
+        for (int j = 0; j < (i == 0 ? 28 : 10); ++j)
+            file << biases[i][j] << " ";
+        file << "\n";
+    }
+
+    file.close();
+}
+
+bool NeuralNetwork::loadParameters() {
+    std::ifstream file("network_parameters.txt");
+    if (!file.is_open())
+        return false; // El archivo no existe, continuar con la inicialización normal
+
+    // Cargar pesos
+    for (int i = 0; i < 2; ++i)
+        for (int j = 0; j < (i == 0 ? 784 : 28); ++j)
+            for (int k = 0; k < (i == 0 ? 28 : 10); ++k)
+                file >> weights[i][j][k];
+
+    // Cargar sesgos
+    for (int i = 0; i < 2; ++i)
+        for (int j = 0; j < (i == 0 ? 28 : 10); ++j)
+            file >> biases[i][j];
+
+    file.close();
+    return true;
 }

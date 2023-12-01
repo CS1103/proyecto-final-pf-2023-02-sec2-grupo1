@@ -16,6 +16,7 @@ class Dataset {
     std::vector<std::pair<std::vector<double>,label>> training_data;
     std::vector<std::pair<std::vector<double>,label>> test_data;
     std::vector<std::pair<std::vector<double>,label>> validation_data;
+    std::vector<double> image_2b_predicted;
 public:
     Dataset();
     template<template<typename...> class Container>
@@ -31,6 +32,7 @@ public:
     size_t get_training_size() const;
     size_t get_test_size() const;
     size_t get_validation_size() const;
+    void leer_imagen_2predict(const std::string&);
 };
 
 #endif //PROTOTYPE_0_5_DATASET_H

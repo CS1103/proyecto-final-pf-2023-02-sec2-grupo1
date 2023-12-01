@@ -21,9 +21,13 @@ class NeuralNetwork {
     double training_result(const label&, const double*);
 public:
     NeuralNetwork(const size_t&, const std::vector<size_t>&, const double&);
+    ~NeuralNetwork();
 
     void epoch_training(const size_t&, const Dataset&);
     void predict(const std::pair<std::vector<double>,label>&);
+
+    void saveParameters();
+    bool loadParameters();
 };
 
 #endif //PROTOTYPE_0_5_NEURALNETWORK_H
