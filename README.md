@@ -71,7 +71,7 @@ Configuracion de CMAKELIST:
 
 ### Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](https://i.imgur.com/KW1gTUp.png)
+![Diagrama de Casos de Uso](https://i.imgur.com/KW1gTUp.png)](https://media.arxiv-vanity.com/render-output/8052337/x1.png)
 ![Diagrama de Casos de Uso](https://miro.medium.com/v2/resize:fit:1400/1*RxT4yZtXFkQ47Fe7huHe_w.png)
 
 ## Link de Video de Presentación
