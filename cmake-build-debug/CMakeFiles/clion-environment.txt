@@ -1,0 +1,4 @@
+ToolSet: w64 11.0 (local)@C:\Users\Carlo\AppData\Local\Programs\CLion\bin\mingw_SDL2
+Options: 
+
+Options:-DCMAKE_MAKE_PROGRAM=C:/Users/Carlo/AppData/Local/Programs/CLion/bin/ninja/win/x64/ninja.exe
